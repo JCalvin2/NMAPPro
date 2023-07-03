@@ -97,9 +97,9 @@ def nmap_filter():
 	
 	os.system("nmap " + "-iL deletable.txt -oX " + name + ".xml " + flag)
   
-	print('\n' + "Completed! Please check " + name + ".xml for your results! P.S. If there is no csv file then there were no valid results.")
+	print('\n' + "Completed! Please check " + name + ".xml for your results!")
   
-  #To use this you will need to have xml2csv.py in the same directory. https://github.com/NetsecExplained/Nmap-XML-to-CSV 
+  	#To use this you will need to have xml2csv.py in the same directory. https://github.com/NetsecExplained/Nmap-XML-to-CSV 
 	#os.system('python xml2csv.py -f ' + name + '.xml -csv ' + name + '.csv')
 	#print('\n' + "Completed! Please check " + name + ".csv for your results! P.S. If there is no csv file then there were no valid results.")
 	
