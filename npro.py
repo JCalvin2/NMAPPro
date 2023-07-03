@@ -96,7 +96,8 @@ def nmap_filter():
 		flag = flag + ' ' + flags[b]
 	
 	os.system("nmap " + "-iL deletable.txt -oX " + name + ".xml " + flag)
-  
+
+	#comment this out if you are using the second print statement below
 	print('\n' + "Completed! Please check " + name + ".xml for your results!")
   
   	#To use this you will need to have xml2csv.py in the same directory. https://github.com/NetsecExplained/Nmap-XML-to-CSV 
